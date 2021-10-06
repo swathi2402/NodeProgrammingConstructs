@@ -3,7 +3,6 @@ let readline = require('readline').createInterface({
     output: process.stdout
 })
 
-let isPrime = 0;
 readline.question("Enter number:", number => {
 
     while (number % 2 == 0) {
