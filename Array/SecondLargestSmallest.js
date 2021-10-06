@@ -4,14 +4,10 @@ for(let i=0; i<10; i++) {
 }
 console.log("Array of 10 random numbers: ", numberArray)
 
-let max = Math.max.apply(null, numberArray); 
-let temp_numbers = numberArray
-temp_numbers.splice(temp_numbers.indexOf(max), 1); 
-let secondLargest =  Math.max.apply(null, temp_numbers);
-
-let min = Math.min.apply(null, numberArray); 
-numberArray.splice(numberArray.indexOf(min), 1); 
-let secondSmallest =  Math.min.apply(null, numberArray);
+numberArray.sort();
+console.log("Sorted Array: ", numberArray);
+let secondLargest =  numberArray[1];
+let secondSmallest =  numberArray[numberArray.length - 2];
 
 console.log("Second Largest number: " + secondLargest);
 console.log("Second Smallest number: " + secondSmallest);
