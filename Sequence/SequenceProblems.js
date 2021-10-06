@@ -21,3 +21,9 @@ console.log("Fifth number:", number5);
 let sum = number1 + number2 + number3 + number4 + number5;
 let average = sum / 5;
 console.log("Sum: ", sum," Average: ", average);
+
+console.log("Unit conversion");
+console.log("42 inch =", 42 / 12, " ft.");
+let poltInMeter =  60 * 40 * 0.092903;
+console.log("60 * 40 feet =", poltInMeter, "sq. m");
+console.log("Area of 25 plots of size 60 * 40 feet =", 25 * poltInMeter * 0.0002471054, "acres");
