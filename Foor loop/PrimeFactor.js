@@ -17,6 +17,6 @@ readline.question("Enter number:", number => {
         }
     }
     if (number > 2)
-        console.log(number+ " ");
+        console.log(number + " ");
   readline.close();
 });
