@@ -1,0 +1,35 @@
+{
+    let number1 = Math.floor(Math.random() * (999 - 100 + 1) + 100);
+    let number2 = Math.floor(Math.random() * (999 - 100 + 1) + 100);
+    let number3 = Math.floor(Math.random() * (999 - 100 + 1) + 100);
+    let number4 = Math.floor(Math.random() * (999 - 100 + 1) + 100);
+    let number5 = Math.floor(Math.random() * (999 - 100 + 1) + 100);
+
+    console.log("First number:", number1);
+    console.log("Second number:", number2);
+    console.log("Third number:", number3);
+    console.log("Fourth number:", number4);
+    console.log("Fifth number:", number5);
+
+    let min = number1;
+    let max = number1;
+
+    if (number2 > max) 
+        max = number2;
+    else if (number2 < min) 
+        min = number2;
+    if (number3 > max) 
+        max = number3;
+    else if (number3 < min) 
+        min = number3;
+    if (number4 > max) 
+        max = number4;
+    else if (number4 < min) 
+        min = number4;
+    if (number5 > max) 
+        max = number5;
+    else if (number5 < min) 
+        min = number5;
+
+    console.log("Maximum number:", max, "Minimum number:", min);
+}
