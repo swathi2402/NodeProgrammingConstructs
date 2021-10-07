@@ -1,6 +1,5 @@
-let numberOfRolls = 11;
 let dieRollMap = new Map();
-for(let i = 1; i<=6; i++) {
+for(let i = 1; i <= 6; i++) {
     dieRollMap.set(i, 0);
 }
 
@@ -12,3 +11,7 @@ while(true) {
         break;
 } 
 console.log(dieRollMap);
+sortedMap = new Map([...dieRollMap.entries()].sort((a, b) => b[1] - a[1]));
+maximun = Array.from(sortedMap.keys()).at(0);
+minimum = Array.from(sortedMap.keys()).at(-1);
+console.log("Maximum repeated: " + maximun + " Minimim repeated: " + minimum);
